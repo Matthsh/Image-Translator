@@ -9,7 +9,7 @@ pytesseract.pytesseract.tesseract_cmd = caminho + r"\tesseract.exe"
 imagem = cv2.imread("screenshot.png")
 
 # passo 2: extrair o texto da imagem (vários formatos possiveis)
-text = pytesseract.image_to_string(imagem, lang="chi_tra")
+text = pytesseract.image_to_string(imagem)
 # chines tradicional = chi_tra
 # chines simplificado = chi_sim
 # portugues = por
